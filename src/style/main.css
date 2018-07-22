@@ -12,6 +12,9 @@ html,
   font-size: 18px;
   line-height: 23px;
 }
+body {
+  background-color: #515052;
+}
 body,
 .article {
   font-family: sans-serif;

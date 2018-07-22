@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Logo :color="baseColor" />
+        <Logo color="#F75C03" />
         <span id="logo-text" :style="colorStyle">{{text}}</span>
     </div>
 </template>
@@ -18,7 +18,7 @@ export default {
       type: String,
       default: "---"
     },
-    baseColor: {
+    color: {
       type: String,
       default: "#000"
     }
@@ -26,7 +26,7 @@ export default {
   computed: {
     colorStyle: function getColorStyle() {
       return {
-        color: this.baseColor
+        color: this.color
       };
     }
   }
@@ -36,7 +36,7 @@ export default {
 <style scoped>
 #logo-text {
   font-size: 2em;
-  font-family: Gloria Hallelujah, sans-serif;
+  font-family: Frijole, sans-serif;
   padding-left: 20px;
   line-height: 3em;
 }
