@@ -25,6 +25,8 @@ export default {
   xml: space=preserve;
   width: 50px;
   height: 50px;
+  position: relative;
+  top: 10px;
 }
 /* #_x31_1-DSLR_Camera path,
 #_x31_1-DSLR_Camera circle {

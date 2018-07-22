@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<Header/>
+		<Header text="Sjöbergs fotolabb" base-color="#FF0000"/>
 	</div>
 </template>
 
