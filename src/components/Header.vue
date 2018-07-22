@@ -1,7 +1,9 @@
 <template>
-    <div>
-        <Logo color="#F75C03" />
-        <span id="logo-text" :style="colorStyle">{{text}}</span>
+    <div class="main">
+        <div class="centered">
+            <Logo color="#F75C03" />
+            <span id="logo-text" :style="colorStyle">{{text}}</span>
+        </div>
     </div>
 </template>
 
@@ -39,6 +41,16 @@ export default {
   font-family: Frijole, sans-serif;
   padding-left: 20px;
   line-height: 3em;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.main {
+  background-color: #00120b;
+  grid-column: left / end;
+  grid-row: top;
 }
 </style>
 
