@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Logo />
+        <Logo color="#00FF00" />
     </div>
 </template>
 
