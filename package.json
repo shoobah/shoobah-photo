@@ -15,6 +15,8 @@
     "@vue/cli-plugin-babel": "^3.0.0-rc.5",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.5",
     "@vue/cli-service": "^3.0.0-rc.5",
+    "@vue/eslint-config-prettier": "^3.0.0-rc.5",
+    "lint-staged": "^7.2.0",
     "vue-template-compiler": "^2.5.16"
   },
   "eslintConfig": {
@@ -24,7 +26,9 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "plugin:vue/essential",
+      "@vue/prettier"
     ],
     "rules": {
       "vue/attribute-hyphenation": [
@@ -44,6 +48,10 @@
       "parser": "babel-eslint"
     }
   },
+  "prettier": {
+    "useTabs": true,
+    "tabWidth": 4
+  },
   "postcss": {
     "plugins": {
       "autoprefixer": {}
@@ -53,5 +61,18 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
 }

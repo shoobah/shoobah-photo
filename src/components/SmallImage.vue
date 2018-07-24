@@ -1,24 +1,24 @@
 <template>
-    <img :src="src" alt="">
+	<img :src="src" alt="">
 </template>
 
 <script>
 export default {
-  props: {
-    src: {
-      type: String,
-      default: "No image"
-    },
-    title: {
-      type: String,
-      default: "Untitled"
-    }
-  }
+	props: {
+		src: {
+			type: String,
+			default: "No image"
+		},
+		title: {
+			type: String,
+			default: "Untitled"
+		}
+	}
 };
 </script>
 
 <style scoped>
 img {
-  width: 300px;
+	width: 300px;
 }
 </style>

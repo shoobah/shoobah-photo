@@ -9,24 +9,24 @@
 
 <script>
 export default {
-  name: "Logo",
-  props: {
-    color: {
-      type: String,
-      default: "#FF0000"
-    }
-  }
+	name: "Logo",
+	props: {
+		color: {
+			type: String,
+			default: "#FF0000"
+		}
+	}
 };
 </script>
 
 <style scoped>
 #camera-logo {
-  enable-background: new 0 0 307.308 307.308;
-  xml: space=preserve;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 10px;
+	enable-background: new 0 0 307.308 307.308;
+	xml: space=preserve;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 10px;
 }
 /* #_x31_1-DSLR_Camera path,
 #_x31_1-DSLR_Camera circle {
