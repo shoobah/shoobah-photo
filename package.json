@@ -1,78 +1,78 @@
 {
-  "name": "shoobahphoto",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "vue": "^2.5.16",
-    "vue-router": "^3.0.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-rc.5",
-    "@vue/cli-plugin-eslint": "^3.0.0-rc.5",
-    "@vue/cli-service": "^3.0.0-rc.5",
-    "@vue/eslint-config-prettier": "^3.0.0-rc.5",
-    "lint-staged": "^7.2.0",
-    "vue-template-compiler": "^2.5.16"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended",
-      "plugin:vue/essential",
-      "@vue/prettier"
-    ],
-    "rules": {
-      "vue/attribute-hyphenation": [
-        "error",
-        "always"
-      ],
-      "vue/html-end-tags": "error",
-      "vue/html-indent": [
-        "error",
-        "tab"
-      ],
-      "vue/html-self-closing": "error",
-      "vue/require-default-prop": "error",
-      "vue/require-prop-types": "error"
-    },
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "prettier": {
-    "useTabs": true,
-    "tabWidth": 4
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
-  }
+	"name": "shoobahphoto",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"lint": "vue-cli-service lint"
+	},
+	"dependencies": {
+		"vue": "^2.5.16",
+		"vue-router": "^3.0.1"
+	},
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "^3.0.0-rc.5",
+		"@vue/cli-plugin-eslint": "^3.0.0-rc.5",
+		"@vue/cli-service": "^3.0.0-rc.5",
+		"@vue/eslint-config-prettier": "^3.0.0-rc.5",
+		"lint-staged": "^7.2.0",
+		"vue-template-compiler": "^2.5.16"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"plugin:vue/essential",
+			"eslint:recommended",
+			"plugin:vue/essential",
+			"@vue/prettier"
+		],
+		"rules": {
+			"vue/attribute-hyphenation": [
+				"error",
+				"always"
+			],
+			"vue/html-end-tags": "error",
+			"vue/html-indent": [
+				"error",
+				"tab"
+			],
+			"vue/html-self-closing": "error",
+			"vue/require-default-prop": "error",
+			"vue/require-prop-types": "error"
+		},
+		"parserOptions": {
+			"parser": "babel-eslint"
+		}
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 4
+	},
+	"postcss": {
+		"plugins": {
+			"autoprefixer": {}
+		}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not ie <= 8"
+	],
+	"gitHooks": {
+		"pre-commit": "lint-staged"
+	},
+	"lint-staged": {
+		"*.js": [
+			"vue-cli-service lint",
+			"git add"
+		],
+		"*.vue": [
+			"vue-cli-service lint",
+			"git add"
+		]
+	}
 }
